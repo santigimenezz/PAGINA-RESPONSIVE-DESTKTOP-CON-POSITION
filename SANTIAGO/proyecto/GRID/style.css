@@ -1,0 +1,698 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1268.8;
+    
+}
+
+
+
+
+.imagenes{
+
+    width: 35px;
+    margin: 10px;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "imagen"
+    "titulo-burguer"
+    "main" 
+    "titulo-starters" 
+    "starters"
+    "titulo-salsas"
+    "salsas"
+    "footer"
+
+    ;
+}
+
+.header-area{
+grid-area: header;
+
+    
+}
+
+.header-grid{
+    display: grid;
+    grid-template-columns: 1fr 3fr ;
+    justify-items: center;
+    align-items: center;  
+   height: 110px;
+   background-color: darkgoldenrod;
+   gap: 100px;
+   
+}
+
+.navbar{
+    position: relative;
+    right: 200px;
+    
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+   
+    color: white;
+    
+    
+}
+
+.navbar ul li {
+    margin: 10px;
+    
+}
+
+.navbar ul li a{
+text-decoration: none;
+color: white;
+
+
+}
+
+.navbar ul li a:hover{
+    color: black;
+}
+
+.titulo-area{
+    grid-area: titulo-burguer;
+}
+
+.titulo-burguer{
+    width: 100%;
+    height: 150px;
+    background-color: darkgoldenrod;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    font-size: 24px;
+   
+  
+}
+.main-area{
+    grid-area: main;
+}
+
+.imagen-area{
+    grid-area: imagen;
+}
+.main-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 600px;
+    margin: 60px;
+    gap: 30px;
+   
+
+}
+
+.titulo-starters-area{
+    grid-area: titulo-starters;
+    background-color: darkgoldenrod;
+    width: 100%;
+    height: 150px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    font-size: 24px;
+    
+
+}
+
+.starters-area{
+    grid-area: starters;
+   
+}
+
+.starters-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 700px;
+    margin: 60px;
+    gap: 30px;
+    
+}
+
+.titulo-salsas-area{
+    grid-area: titulo-salsas;
+}
+
+.titulo-salsas{
+    background-color: darkgoldenrod;
+    width: 100%;
+    height: 150px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    font-size: 24px;
+
+}
+
+.salsas-area{
+    grid-area: salsas;
+}
+
+.salsas-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 600px;
+    margin: 60px;
+    gap: 30px;
+}
+
+
+
+
+.footer-area{
+    grid-area: footer;
+
+}
+
+.footer-grid{
+   height: 120px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(75, 74, 74);
+    
+}
+
+.imagen1{
+    height: 206px;
+    width: 250px;
+    border-radius: 30px;
+    box-shadow: 2px 4px 10px 0 black;
+    
+}
+
+
+.contenedor-imagen{
+    width: 100%;
+    height: 700px;
+    background-image: url(../GRID/inicio-fotos/fototakeaway.png)
+}
+
+h1{
+    color: white;
+    font-size:40px;
+   
+}
+
+h2{
+    text-align: center;
+    margin:5px;
+    color: white;
+    font-size: 30px;
+    
+}
+
+h3{
+    text-align: center;
+    color: darkgrey;
+}
+
+h4{
+    color: white;
+}
+
+h5{
+    color: white;
+    margin-top: 20px;
+    border: 1px solid white;
+    width: 150px;
+    text-align: center;
+    height: 18px;
+    background-color: darkgoldenrod;
+    color: black;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.foto1{
+    width: 100%;
+    height: 700px;
+    background-image: url(../GRID/inicio-fotos/fotoprincipal.png);
+}
+
+.foto2{
+    width: 100%;
+    height: 700px;
+    background-image: url(../GRID/inicio-fotos/fototakeaway.png);
+}
+
+
+
+.contenedor-menu{
+    display: grid;
+   grid-template-areas: 
+    "header header "
+    "fotos fotos "
+    "donde-encontrarnos donde-encontrarnos "
+    "direcciones direcciones "
+    "footer footer"
+   
+
+    ;
+  
+    
+
+
+}
+
+.fotos-menu-grid-area{
+    grid-area: fotos;
+    
+}
+
+.donde.encontrarnos-area{
+    grid-area: donde-encontrarnos;
+    
+}
+
+.donde-encontrarnos-grid{
+    height: 200px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin: 20px;
+   
+    
+}
+
+.direcciones-area{
+    grid-area: direcciones;
+}
+
+.direcciones-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+   height: 300px;
+   margin: 0px 150px 100px 150px;
+   gap: 30px;
+  
+   
+}
+
+.main-menu{
+    background-color: black;
+}
+
+
+
+
+
+
+
+.contenedor-imagen-franquicias{
+    width: 100%;
+    height: 650px;
+    background-image: url(./inicio-fotos/franquicias.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.main-franquicias{
+    background-color: black;
+}
+
+
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "ventajas"
+    "caracteristicas"
+    "formulario"
+    "footer"
+
+}
+
+.imagen-casita{
+    width: 250px;
+}
+
+.ventajas-area{
+    grid-area: ventajas;
+}
+.ventajas-grid{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: 350px;
+    align-items: center;
+    justify-items: center;
+}
+
+.texto-ventajas{
+    width:640px ;
+    text-align: center;
+}
+
+.caracteristicas-area{
+    grid-area: caracteristicas;
+}
+
+.caracteristicas-grid{
+display: grid;
+grid-template-columns: 1fr;
+align-items: center;
+justify-items: center;
+
+}
+
+.texto-caracteristicas{
+    width: 800px;
+}
+
+.formulario-area{
+    grid-area: formulario;
+}
+
+.formulario-grid{
+    display: grid;
+   grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 10px;
+    margin: 60px;
+    
+    
+  
+}
+
+.form-edit{
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+    
+    
+   
+}
+.submit{
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.contenedor-imagen-trabaja{
+    width: 100%;
+    height: 700px;
+    background-image: url(./inicio-fotos/trabaja.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.container-trabaja{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "imagen"
+    "formulario"
+    "footer"
+
+
+    ;
+}
+
+.contenedor-imagen-grid{
+    grid-area: imagen;
+
+}
+
+.main-trabaja{
+    background-color: black;
+}
+
+
+
+.contenedor-imagen-cupones-grid{
+    background-image: url(./inicio-fotos/fototakeaway.png);
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imagen-cupon{
+    width: 380px;
+    border-radius: 10px;
+    
+}
+
+.container-cupones{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "imagen"
+    "titulo"
+    "cupones"
+    "footer"
+
+    ;
+}
+
+.container-cupones{
+
+}
+.contenedor-imagen-cupones-area{
+    grid-area: imagen;
+}
+
+.titulo-cupones-area{
+    grid-area: titulo;
+    display: grid;
+   
+}
+
+.titulo-cupones{
+width: 100%;
+height: 100px;
+background-color: darkgoldenrod;
+display: grid;
+align-items: center;
+justify-items: center;
+
+
+}
+
+.cupones-area-grid{
+    grid-area: cupones;
+    background-color: black;
+}
+
+.cupones-grid{
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+
+    padding: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:768px){
+   
+    body{
+       overflow-x: hidden;
+    }
+    header{
+        width: 768px;
+    }
+    footer{
+        width:768px ;
+    }
+    .fotos-menu-grid-area{
+        width: 768px;
+    }
+   main{
+      width: 768px;
+   }
+    
+
+   .header-grid {
+       grid-template-columns: 1fr ;
+       gap: 0px;
+    position: relative;
+    
+   }
+
+   .navbar{
+       position: relative;
+       left: 5px;
+   }
+
+
+
+
+.donde-encontrarnos-grid{
+    position: relative;
+   left: 5px;
+    
+    
+    
+    position: relative;
+    right: 100px;
+
+}
+    
+.direcciones-grid{
+   
+    grid-template-columns: 1fr 1fr ;
+   height: 300px;
+   width: 500px;
+   gap: 10px;
+   margin-top: 50px;
+   width: 768px;
+   position: relative;
+   right: 180px;
+
+}
+
+.footer-grid{
+    grid-template-columns: 1fr;
+    padding: 20px;
+    height: 135px;
+}
+
+header{
+    width: 768px;
+}
+footer{
+    width:768px ;
+}
+.fotos-menu-grid-area{
+    width: 768px;
+}
+main{
+   width: 768px;
+}
+
+
+
+
+
+.main-grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: 6fr;
+    height: 1800px;
+    position: relative;
+    right: 60px;
+
+}
+
+.starters-grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: 6fr;
+    height: 1800px;
+    
+   
+}
+
+.salsas-grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: 6fr;
+    height: 1800px;
+  
+}
+
+.ventajas-grid{
+    grid-template-columns: 1fr;
+    margin-bottom: 120px;
+    margin-top: 80px;
+}
+.imagen-casita{
+    width: 150px;
+    position: ;
+}
+.imagen-casa{
+    position: relative;
+    left: 15px;
+    margin: 5px;
+}
+.caracteristicas-grid h3{
+ width: 350px; 
+ position: relative;
+ left:220px; 
+ margin-top: 20px;
+ padding: 10px;
+
+ 
+}
+
+
+
+
+
+
+
+.subtitulo-trabaja{
+    margin-top: 100px;
+}
+
+
+
+
+
+
+
+.cupones-grid{
+    height: 1200px;
+    grid-template-columns: 1fr;
+}
+
+
+
+
+}
